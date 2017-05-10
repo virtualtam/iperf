@@ -5,6 +5,7 @@ include_HEADERS         = iperf_api.h # Defines the headers that get installed w
 
 
 # Specify the source files and flags for the iperf library
+libiperf_la_LDFLAGS     = -no-undefined -version-info 0:0:0
 libiperf_la_SOURCES     = \
                         cjson.c \
                         cjson.h \
